@@ -1,10 +1,11 @@
 {
-  "homepage": "https://yourusername.github.io/buispro-web-dev",
-  "name": "buispro-web-dev",
+  "homepage": "https://rgelfanb.github.io/buispro",
+  "name": "buispro",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"

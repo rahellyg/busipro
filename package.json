@@ -1,4 +1,5 @@
 {
+  "homepage":"https://rahellyg.github.io/busipro/",
   "name": "buispro",
   "version": "1.0.0",
   "type": "module",
@@ -23,3 +24,4 @@
     "vite": "^5.0.8"
   }
 }
+

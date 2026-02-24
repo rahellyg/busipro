@@ -30,8 +30,19 @@ export const portfolioProjects = [
     image: "🍽️",
     category: "ניהול ותפעול",
     technologies: ["Web App", "Excel Integration"],
-    background: "food",
+    background: "sails",
     previewImage: "foodDict"
+  },
+   {
+    id: 4,
+    title: "Naomi - תקשור והעברת מסרים",
+    description: "דף נחיתה ויצירת קשר למכירת ערוץ",
+    url: "https://nlponmypath.ravpage.co.il/naomi/",
+    image: "🍽️",
+    category: "דף נחיתה\מכירות",
+    technologies: ["Web App", "landing page"],
+    background: "food",
+    previewImage: "naomi"
   }
 ]
 

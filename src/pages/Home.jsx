@@ -7,7 +7,8 @@ import smartStartImage from '../components/smart-start.png'
 import maayanessImage from '../components/maayaness.png'
 import foodDictImage from '../components/foodDict.png'
 import AIGeneratedWebsite from '../components/AIGeneratedWebsite'
-import naomiImgae from '../components/naomi.jpg'
+import naomiImage from '../components/naomi.jpg'
+import rokiImage from '../components/roki.jpg'
 import { generateWebsite, generateWebsiteImages } from '../services/aiService'
 import './Home.css'
 
@@ -463,6 +464,21 @@ function Home() {
                       >
                         <img 
                           src={naomiImage} 
+                          alt={project.title}
+                          className="portfolio-preview-image"
+                        />
+                      </a>
+                    </div>
+                 ) : project.previewImage === 'roki' ? (
+                    <div className="portfolio-preview-image-container">
+                      <a 
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ display: 'block', width: '100%', height: '100%' }}
+                      >
+                        <img 
+                          src={rokiImage} 
                           alt={project.title}
                           className="portfolio-preview-image"
                         />

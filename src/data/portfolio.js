@@ -43,6 +43,17 @@ export const portfolioProjects = [
     technologies: ["Web App", "landing page"],
     background: "food",
     previewImage: "naomi"
+  },
+   {
+    id: 5,
+    title: "Roki - שווק חברתי חכם",
+    description: "דף נחיתה ויצירת קשר ",
+    url: "https://rahellyg.github.io/roki/",
+    image: "🍽️",
+    category: "דף נחיתה\מכירות",
+    technologies: ["Web App", "landing page"],
+    background: "food",
+    previewImage: "roki"
   }
 ]
 

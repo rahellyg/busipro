@@ -39,7 +39,7 @@ export const portfolioProjects = [
     description: "דף נחיתה ויצירת קשר למכירת ערוץ",
     url: "https://nlponmypath.ravpage.co.il/magicworld",
     image: "🍽️",
-    category: "דף נחיתה\מכירות",
+    category: "דף נחיתה,מכירות",
     technologies: ["Web App", "landing page"],
     background: "food",
     previewImage: "naomi"
@@ -50,7 +50,7 @@ export const portfolioProjects = [
     description: "דף נחיתה ויצירת קשר ",
     url: "https://rahellyg.github.io/roki/",
     image: "🍽️",
-    category: "דף נחיתה\מכירות",
+    category: "דף נחיתה,מכירות",
     technologies: ["Web App", "landing page"],
     background: "food",
     previewImage: "roki"

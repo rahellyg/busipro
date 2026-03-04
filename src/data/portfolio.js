@@ -37,7 +37,7 @@ export const portfolioProjects = [
     id: 4,
     title: "Naomi - תקשור והעברת מסרים",
     description: "דף נחיתה ויצירת קשר למכירת ערוץ",
-    url: "https://nlponmypath.ravpage.co.il/naomi/",
+    url: "https://nlponmypath.ravpage.co.il/magicworld",
     image: "🍽️",
     category: "דף נחיתה\מכירות",
     technologies: ["Web App", "landing page"],

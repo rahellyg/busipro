@@ -54,6 +54,29 @@ export const portfolioProjects = [
     technologies: ["Web App", "landing page"],
     background: "food",
     previewImage: "roki"
+  },
+   {
+    id: 6,
+    title: "ים של חברים- רשת חברתית ",
+    description: "דף נחיתה ויצירת קשר ",
+    url: "https://rahellyg.github.io/YamShellHaverim/",
+    image: "🍽️",
+    category: "דף רשת חברתית",
+    technologies: ["Web App", "social"],
+    background: "food",
+    previewImage: "yamshellhaverim"
+  },
+   {
+    id: 7,
+    title: "midhd - ניהול ועזרה לאנשי קשב",
+    description: "דף נחיתה ויצירת קשר ",
+    url: "https://rahellyg.github.io/midhd/",
+    image: "🍽️",
+    category: "ניהול",
+    technologies: ["Web App", "social"],
+    background: "food",
+    previewImage: "midhd"
   }
+  
 ]
 

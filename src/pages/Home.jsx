@@ -9,6 +9,8 @@ import foodDictImage from '../components/foodDict.png'
 import AIGeneratedWebsite from '../components/AIGeneratedWebsite'
 import naomiImage from '../components/naomi.jpg'
 import rokiImage from '../components/roki.jpg'
+import yamshellhaverimImage from '../components/yamshellhaverim.jpg'
+import midhd from  '../components/midhd.jpg'
 import { generateWebsite, generateWebsiteImages } from '../services/aiService'
 import './Home.css'
 
@@ -479,6 +481,36 @@ function Home() {
                       >
                         <img 
                           src={rokiImage} 
+                          alt={project.title}
+                          className="portfolio-preview-image"
+                        />
+                      </a>
+                    </div>
+                   ) : project.previewImage === 'yamshellhaverim' ? (
+                    <div className="portfolio-preview-image-container">
+                      <a 
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ display: 'block', width: '100%', height: '100%' }}
+                      >
+                        <img 
+                          src={yamshellhaverimImage} 
+                          alt={project.title}
+                          className="portfolio-preview-image"
+                        />
+                      </a>
+                    </div>
+                   ) : project.previewImage === 'midhd' ? (
+                    <div className="portfolio-preview-image-container">
+                      <a 
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ display: 'block', width: '100%', height: '100%' }}
+                      >
+                        <img 
+                          src={midhdImage} 
                           alt={project.title}
                           className="portfolio-preview-image"
                         />

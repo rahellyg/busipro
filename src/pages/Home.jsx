@@ -10,7 +10,7 @@ import AIGeneratedWebsite from '../components/AIGeneratedWebsite'
 import naomiImage from '../components/naomi.jpg'
 import rokiImage from '../components/roki.jpg'
 import yamshellhaverimImage from '../components/yamshellhaverim.jpg'
-import midhd from  '../components/midhd.jpg'
+import midhdImage from  '../components/midhd.jpg'
 import { generateWebsite, generateWebsiteImages } from '../services/aiService'
 import './Home.css'
 

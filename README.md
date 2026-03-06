@@ -24,6 +24,10 @@ npm run dev
 ```bash
 npm run build
 ```
+### gh-pages
+```bash
+cd /workspaces/busipro && npm install -D gh-pages
+```
 
 ### תצוגה מקדימה של גרסת ייצור
 ```bash

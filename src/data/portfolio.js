@@ -35,17 +35,6 @@ export const portfolioProjects = [
   },
    {
     id: 4,
-    title: "Naomi - תקשור והעברת מסרים",
-    description: "דף נחיתה ויצירת קשר למכירת ערוץ",
-    url: "https://nlponmypath.ravpage.co.il/magicworld",
-    image: "🍽️",
-    category: "דף נחיתה,מכירות",
-    technologies: ["Web App", "landing page"],
-    background: "food",
-    previewImage: "naomi"
-  },
-   {
-    id: 5,
     title: "Roki - שווק חברתי חכם",
     description: "דף נחיתה ויצירת קשר ",
     url: "https://rahellyg.github.io/roki/",
@@ -56,7 +45,7 @@ export const portfolioProjects = [
     previewImage: "roki"
   },
    {
-    id: 6,
+    id: 5,
     title: "ים של חברים- רשת חברתית ",
     description: "דף נחיתה ויצירת קשר ",
     url: "https://rahellyg.github.io/YamShellHaverim/",
@@ -67,7 +56,7 @@ export const portfolioProjects = [
     previewImage: "yamshellhaverim"
   },
    {
-    id: 7,
+    id: 6,
     title: "midhd - ניהול ועזרה לאנשי קשב",
     description: "דף נחיתה ויצירת קשר ",
     url: "https://rahellyg.github.io/midhd/",

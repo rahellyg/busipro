@@ -39,19 +39,19 @@ function Blog() {
           ))}
         </div>
         
-        <div className="blog-navigation" style={{ marginTop: '4rem', paddingTop: '3rem', borderTop: '2px solid #e2e8f0', textAlign: 'center' }}>
-          <h3 style={{ marginBottom: '2rem', color: 'var(--text-dark)', fontSize: '1.5rem' }}>גלה עוד</h3>
-          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link to="/#services" className="btn btn-secondary" style={{ textDecoration: 'none' }}>
+        <div className="blog-navigation">
+          <h3 className="blog-navigation-title">גלה עוד</h3>
+          <div className="blog-navigation-links">
+            <Link to="/#services" className="btn btn-secondary blog-nav-btn">
               השירותים שלנו
             </Link>
-            <Link to="/#portfolio" className="btn btn-secondary" style={{ textDecoration: 'none' }}>
+            <Link to="/#portfolio" className="btn btn-secondary blog-nav-btn">
               אתרים שעשינו
             </Link>
-            <Link to="/#contact" className="btn btn-primary" style={{ textDecoration: 'none' }}>
+            <Link to="/#contact" className="btn btn-primary blog-nav-btn">
               צור קשר
             </Link>
-            <Link to="/" className="btn btn-secondary" style={{ textDecoration: 'none' }}>
+            <Link to="/" className="btn btn-secondary blog-nav-btn">
               חזרה לדף הבית
             </Link>
           </div>

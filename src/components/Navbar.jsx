@@ -6,32 +6,31 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const location = useLocation()
   const isBlogPage = location.pathname.startsWith('/blog')
+  const isHomePage = location.pathname === '/busipro' || location.pathname === '/'
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${isHomePage ? 'navbar-home' : ''}`}>
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo">
+        <Link to="/busipro" className="navbar-logo">
           <div className="logo-container">
-            <svg className="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className="logo-icon" viewBox="0 0 24 24" fill="none" stroke="none" xmlns="http://www.w3.org/2000/svg">
               <defs>
-                <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style={{stopColor: '#2563eb', stopOpacity: 1}} />
-                  <stop offset="50%" style={{stopColor: '#94a3b8', stopOpacity: 1}} />
-                  <stop offset="100%" style={{stopColor: '#64748b', stopOpacity: 1}} />
+                <linearGradient id="logoGradientNav" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style={{ stopColor: '#d946ef', stopOpacity: 1 }} />
+                  <stop offset="100%" style={{ stopColor: '#a855f7', stopOpacity: 1 }} />
                 </linearGradient>
-                <filter id="glow">
-                  <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-                  <feMerge>
-                    <feMergeNode in="coloredBlur"/>
-                    <feMergeNode in="SourceGraphic"/>
-                  </feMerge>
-                </filter>
               </defs>
-              <rect x="8" y="8" width="24" height="24" rx="4" fill="url(#logoGrad)" filter="url(#glow)"/>
-              <path d="M16 20L18 22L24 16" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-              <circle cx="28" cy="12" r="3" fill="#3b82f6" filter="url(#glow)"/>
+              <path
+                d="M7 4 L7 20 M7 4 L12 4 Q14 4 14 6 Q14 8 12 8 L7 8 M7 12 L12 12 Q15 12 15 14.5 Q15 17 12 17 L7 17 L7 20"
+                stroke="url(#logoGradientNav)"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                fill="none"
+              />
+              <circle cx="17" cy="6" r="1.5" fill="url(#logoGradientNav)" />
             </svg>
-            <span className="logo-text">ביזנס פרו</span>
+            <span className="logo-text">BusiPro</span>
           </div>
         </Link>
         
@@ -47,18 +46,15 @@ function Navbar() {
 
         <ul className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
           <li>
-            <Link to="/" onClick={() => setIsMenuOpen(false)}>בית</Link>
+            <Link to="/busipro" onClick={() => setIsMenuOpen(false)}>בית</Link>
           </li>
           {!isBlogPage && (
             <>
               <li>
-                <Link to="/blog" onClick={() => setIsMenuOpen(false)}>בלוג</Link>
-              </li>
-              <li>
                 <a href="#services" onClick={() => setIsMenuOpen(false)}>שירותים</a>
               </li>
               <li>
-                <a href="#portfolio" onClick={() => setIsMenuOpen(false)}>אתרים שעשינו</a>
+                <a href="#portfolio" onClick={() => setIsMenuOpen(false)}>תיק עבודות</a>
               </li>
               <li>
                 <a href="#ai-builder" onClick={() => setIsMenuOpen(false)}>בונה AI</a>
@@ -66,9 +62,17 @@ function Navbar() {
               <li>
                 <a href="#contact" onClick={() => setIsMenuOpen(false)}>צור קשר</a>
               </li>
+              <li>
+                <Link to="/blog" onClick={() => setIsMenuOpen(false)}>בלוג</Link>
+              </li>
             </>
           )}
         </ul>
+        {!isBlogPage && (
+          <a href="#contact" className="navbar-cta" onClick={() => setIsMenuOpen(false)}>
+            בואו נדבר
+          </a>
+        )}
       </div>
     </nav>
   )

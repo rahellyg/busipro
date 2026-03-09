@@ -191,82 +191,36 @@ function Home() {
   return (
     <div className="home">
       {/* Hero Section */}
-      <section className="hero">
-        <div className="hero-container">
-          <div className="hero-content">
-            <h1 className="hero-title">
-              בניית אתרים מקצועית
-              <span className="highlight"> לעסק שלך</span>
-            </h1>
-            <p className="hero-subtitle">
-              אנו בונים אתרים מודרניים, מהירים וידידותיים למשתמש שיעזרו לעסק שלך לצמוח ולהצליח
-            </p>
-            <div className="hero-buttons">
-              <a href="#blog" className="btn btn-primary">
-                קרא את הבלוג שלנו
-              </a>
-              <a href="#contact" className="btn btn-secondary">
-                צור קשר
-              </a>
-            </div>
+      <section className="hero hero-sent">
+        <div className="hero-centered">
+          <span className="hero-chip">הופכים חזון לממשק</span>
+          <h1 className="hero-title">
+            דפי נחיתה שמניעים
+            <span className="highlight">תוצאות אמיתיות</span>
+          </h1>
+          <p className="hero-subtitle">
+            נבנה לך את הנוכחות הדיגיטלית המושלמת שתמיר מבקרים ללקוחות
+          </p>
+          <div className="hero-buttons">
+            <a href="#contact" className="btn btn-primary">
+              קבל הצעת מחיר חינם
+            </a>
+            <a href="#blog" className="btn btn-secondary">
+              קרא את הבלוג שלנו
+            </a>
           </div>
-          <div className="hero-image">
-            <div className="hero-placeholder">
-              <svg viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style={{stopColor: '#2563eb', stopOpacity: 1}} />
-                    <stop offset="100%" style={{stopColor: '#94a3b8', stopOpacity: 1}} />
-                  </linearGradient>
-                </defs>
-                {/* Background */}
-                <rect width="500" height="400" rx="16" fill="url(#grad1)"/>
-                
-                {/* Laptop/Computer Screen */}
-                <rect x="100" y="80" width="300" height="200" rx="8" fill="rgba(255, 255, 255, 0.95)"/>
-                <rect x="120" y="100" width="260" height="160" rx="4" fill="#1e293b"/>
-                
-                {/* Browser Window Elements */}
-                <rect x="120" y="100" width="260" height="25" fill="#334155"/>
-                <circle cx="135" cy="112.5" r="4" fill="#ef4444"/>
-                <circle cx="150" cy="112.5" r="4" fill="#f59e0b"/>
-                <circle cx="165" cy="112.5" r="4" fill="#10b981"/>
-                
-                {/* Code Lines */}
-                <rect x="130" y="140" width="120" height="8" rx="2" fill="#2563eb" opacity="0.8"/>
-                <rect x="130" y="155" width="100" height="8" rx="2" fill="#94a3b8" opacity="0.8"/>
-                <rect x="130" y="170" width="140" height="8" rx="2" fill="#10b981" opacity="0.8"/>
-                <rect x="130" y="185" width="90" height="8" rx="2" fill="#f59e0b" opacity="0.8"/>
-                <rect x="130" y="200" width="110" height="8" rx="2" fill="#ef4444" opacity="0.8"/>
-                
-                {/* HTML Tag */}
-                <text x="250" y="230" fontFamily="monospace" fontSize="14" fill="#2563eb" fontWeight="bold">&lt;/&gt;</text>
-                
-                {/* Laptop Base */}
-                <rect x="80" y="280" width="340" height="20" rx="4" fill="rgba(255, 255, 255, 0.3)"/>
-                <rect x="200" y="300" width="100" height="8" rx="2" fill="rgba(255, 255, 255, 0.2)"/>
-                
-                {/* Mobile Device */}
-                <rect x="350" y="120" width="80" height="140" rx="12" fill="rgba(255, 255, 255, 0.9)"/>
-                <rect x="360" y="130" width="60" height="120" rx="4" fill="#1e293b"/>
-                <rect x="365" y="135" width="50" height="8" rx="2" fill="#3b82f6" opacity="0.6"/>
-                <rect x="365" y="150" width="45" height="6" rx="1" fill="#8b5cf6" opacity="0.5"/>
-                <rect x="365" y="160" width="40" height="6" rx="1" fill="#10b981" opacity="0.5"/>
-                
-                {/* Code Brackets */}
-                <text x="420" y="180" fontFamily="monospace" fontSize="20" fill="rgba(255, 255, 255, 0.6)">{'{'}</text>
-                <text x="420" y="200" fontFamily="monospace" fontSize="20" fill="rgba(255, 255, 255, 0.6)">{'}'}</text>
-                
-                {/* Floating Elements - Code Symbols */}
-                <circle cx="450" cy="80" r="15" fill="rgba(255, 255, 255, 0.2)"/>
-                <text x="445" y="86" fontFamily="monospace" fontSize="12" fill="rgba(255, 255, 255, 0.8)">&lt;</text>
-                
-                <circle cx="50" cy="150" r="12" fill="rgba(255, 255, 255, 0.2)"/>
-                <text x="46" y="156" fontFamily="monospace" fontSize="10" fill="rgba(255, 255, 255, 0.8)">{'}'}</text>
-                
-                <circle cx="450" cy="320" r="12" fill="rgba(255, 255, 255, 0.2)"/>
-                <text x="446" y="326" fontFamily="monospace" fontSize="10" fill="rgba(255, 255, 255, 0.8)">/</text>
-              </svg>
+          <div className="hero-stats">
+            <div>
+              <strong>500+</strong>
+              <span>פרויקטים</span>
+            </div>
+            <div>
+              <strong>98%</strong>
+              <span>שביעות רצון</span>
+            </div>
+            <div>
+              <strong>24h</strong>
+              <span>זמן תגובה</span>
             </div>
           </div>
         </div>

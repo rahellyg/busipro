@@ -28,10 +28,10 @@ function Blog() {
                   <span className="blog-category">{post.category}</span>
                 </div>
                 <h2 className="blog-card-title">
-                  <Link to={`/blog/${post.id}`}>{post.title}</Link>
+                  <Link to={`/busiparo/blog/${post.id}`}>{post.title}</Link>
                 </h2>
                 <p className="blog-card-excerpt">{post.excerpt}</p>
-                <Link to={`/blog/${post.id}`} className="blog-read-more">
+                <Link to={`/busiparo/blog/${post.id}`} className="blog-read-more">
                   קרא עוד →
                 </Link>
               </div>

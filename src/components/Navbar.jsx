@@ -5,7 +5,7 @@ import './Navbar.css'
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const location = useLocation()
-  const isBlogPage = location.pathname.startsWith('/blog')
+  const isBlogPage = location.pathname.startsWith('/busiparo/blog')
   const isHomePage = location.pathname === '/busipro' || location.pathname === '/'
 
   return (
@@ -63,7 +63,7 @@ function Navbar() {
                 <a href="#contact" onClick={() => setIsMenuOpen(false)}>צור קשר</a>
               </li>
               <li>
-                <Link to="/blog" onClick={() => setIsMenuOpen(false)}>בלוג</Link>
+                <Link to="/busiparo/blog" onClick={() => setIsMenuOpen(false)}>בלוג</Link>
               </li>
             </>
           )}

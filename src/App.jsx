@@ -15,8 +15,8 @@ function App() {
         <main>
           <Routes>
             <Route path="/busipro" element={<Home />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:id" element={<BlogPost />} />
+            <Route path="/busiparo/blog" element={<Blog />} />
+            <Route path="/busiparo/blog/:id" element={<BlogPost />} />
           </Routes>
         </main>
         <Footer />

@@ -14,7 +14,7 @@ function BlogPost() {
           <div className="not-found">
             <h1>פוסט לא נמצא</h1>
             <p>הפוסט המבוקש לא קיים.</p>
-            <Link to="/blog" className="btn btn-primary">חזור לבלוג</Link>
+            <Link to="/busiparo/blog" className="btn btn-primary">חזור לבלוג</Link>
           </div>
         </div>
       </div>
@@ -26,7 +26,7 @@ function BlogPost() {
       <article className="blog-post">
         <div className="blog-post-header">
           <div className="container">
-            <Link to="/blog" className="back-link">← חזור לבלוג</Link>
+            <Link to="/busiparo/blog" className="back-link">← חזור לבלוג</Link>
             <div className="blog-post-meta">
               <span className="post-date">{post.date}</span>
               <span className="post-category">{post.category}</span>
@@ -58,7 +58,7 @@ function BlogPost() {
               ))}
             </div>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap', marginTop: '2rem' }}>
-              <Link to="/blog" className="btn btn-primary" style={{ textDecoration: 'none' }}>
+              <Link to="/busiparo/blog" className="btn btn-primary" style={{ textDecoration: 'none' }}>
                 קרא עוד פוסטים
               </Link>
               <Link to="/#services" className="btn btn-secondary" style={{ textDecoration: 'none' }}>

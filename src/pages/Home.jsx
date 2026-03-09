@@ -587,10 +587,10 @@ function Home() {
                     <span className="blog-category-home">{post.category}</span>
                   </div>
                   <h3 className="blog-card-title-home">
-                    <Link to={`/blog/${post.id}`}>{post.title}</Link>
+                    <Link to={`/busiparo/blog/${post.id}`}>{post.title}</Link>
                   </h3>
                   <p className="blog-card-excerpt-home">{post.excerpt}</p>
-                  <Link to={`/blog/${post.id}`} className="blog-read-more-home">
+                  <Link to={`/busiparo/blog/${post.id}`} className="blog-read-more-home">
                     קרא עוד →
                   </Link>
                 </div>
@@ -598,7 +598,7 @@ function Home() {
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-            <Link to="/blog" className="btn btn-primary">
+            <Link to="/busiparo/blog" className="btn btn-primary">
               צפה בכל הפוסטים
             </Link>
           </div>

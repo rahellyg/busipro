@@ -37,7 +37,7 @@ function Footer() {
             <h4>קישורים מהירים</h4>
             <ul>
               <li><Link to="/">בית</Link></li>
-              <li><Link to="/blog">בלוג</Link></li>
+              <li><Link to="/busiparo/blog">בלוג</Link></li>
               <li><a href="#services">שירותים</a></li>
               <li><a href="#contact">צור קשר</a></li>
             </ul>

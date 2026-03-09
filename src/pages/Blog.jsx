@@ -38,24 +38,6 @@ function Blog() {
             </article>
           ))}
         </div>
-        
-        <div className="blog-navigation">
-          <h3 className="blog-navigation-title">גלה עוד</h3>
-          <div className="blog-navigation-links">
-            <Link to="/#services" className="btn btn-secondary blog-nav-btn">
-              השירותים שלנו
-            </Link>
-            <Link to="/#portfolio" className="btn btn-secondary blog-nav-btn">
-              אתרים שעשינו
-            </Link>
-            <Link to="/#contact" className="btn btn-primary blog-nav-btn">
-              צור קשר
-            </Link>
-            <Link to="/" className="btn btn-secondary blog-nav-btn">
-              חזרה לדף הבית
-            </Link>
-          </div>
-        </div>
       </div>
     </div>
   )
